@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    .point{
+        @apply text-[#00FF84] font-bold text-2xl;
+    }
+
+    .point2{
+        @apply border p-1 rounded-full border-[#f3344e] text-[#181818];
+    }
+
+    .course{
+        @apply border border-[#000000] py-1 px-4 rounded-full hover:scale-105 transition-all duration-300 cursor-pointer dark:border-[#f3344e];
+    }
+}
+
+body{
+    overflow-x: hidden;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f3344e; /* Color of the thumb */
+    border-radius: 10px; /* Round corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
+}
